@@ -20,19 +20,18 @@ def main():
 def validate_email(s):
 	if s.count("@")!=1 or s.count(".")!=1:
 		return False
+
 	position_of_attherate=s.find("@")
 	position_of_dot=s.find(".")
+
 	username_string=s[:position_of_attherate]
 	websitename_string=s[position_of_attherate+1:position_of_dot]
 	extension_string=s[position_of_dot+1:]
-	print(username_string)
-	print(websitename_string)
-	print(extension_string)
 
 	for i in username_string:
-		if ((not('a'<=i and i<='z')) and (not('A'<=i and i<='Z')) and (i!='-') and (i!='_') and (i in string.punctuation)):
-			return False 
-		elif (i.isdigit() and (not(0<=int(i) and int(i)<=9))):
+		if i.isalnum() or i=='_' or i=='-':
+			continue
+		else:
 			return False
 
 	for i in websitename_string:
@@ -43,9 +42,9 @@ def validate_email(s):
 		return False
 	
 	for i in extension_string:
-		if ((not('a'<=i and i<='z')) and (not('A'<=i and i<='Z')) and (i in string.punctuation)):
-			return False 
-		elif (i.isdigit() and (not(0<=int(i) and int(i)<=9))):
+		if i.isalnum():
+			continue
+		else:
 			return False
 
 	return True
