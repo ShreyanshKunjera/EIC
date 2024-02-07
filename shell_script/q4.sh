@@ -4,7 +4,7 @@ echo 'Enter the values of X and Y:'
 read X
 read Y
 
-if [[ $X -gt $Y ]]
+if [[ $X > $Y ]]
 then
 	echo "X is greater than Y"
 elif [ $X -lt $Y ]
