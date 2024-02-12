@@ -2,7 +2,7 @@
 #include<stdlib.h>
 #include<stdbool.h>
 #include"decleration.h" 
-#include<string.h>
+// #include<string.h>
 
 int main()
 {
