@@ -1,3 +1,18 @@
+Steps for compiling the source code of movie_ticket_booking:
+git clone https://github.com/ShreyanshKunjera/EIC/movie_ticket_booking_system_in_c.git
+make built_1
+make execute
+ 
+
+
+
+
+
+
+
+
+
+
 This is written in the main branch.
 This is written in the LeapYear branch.
 This is second line written in ValidMail branch.
