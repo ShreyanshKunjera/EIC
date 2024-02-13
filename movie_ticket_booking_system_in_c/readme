@@ -1,0 +1,4 @@
+Steps for compiling the source code of movie_ticket_booking:
+git clone https://github.com/ShreyanshKunjera/EIC/movie_ticket_booking_system_in_c.git
+make built_1
+make execute
